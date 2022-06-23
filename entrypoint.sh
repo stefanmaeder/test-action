@@ -5,7 +5,7 @@
 # echo "::set-output name=time::$time"
 
 df -h
-cd /github/workspace/
+cd /home/runner/work/svelte-template/svelte-template
 ls -ahl
 npm install
 npm run build

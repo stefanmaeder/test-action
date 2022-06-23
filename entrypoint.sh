@@ -4,7 +4,8 @@
 # time=$(date)
 # echo "::set-output name=time::$time"
 
-cd /github/workspace
+df -h
+cd /github/workspace/
 ls -ahl
 npm install
 npm run build

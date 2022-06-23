@@ -5,7 +5,7 @@
 # echo "::set-output name=time::$time"
 
 df -h
-cd /github/home
+cd /home/runner/work/_temp/_github_workflow
 ls -ahl
 npm install
 npm run build

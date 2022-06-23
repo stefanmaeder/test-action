@@ -4,6 +4,7 @@
 # time=$(date)
 # echo "::set-output name=time::$time"
 
+npm init
 npm install
 npm run build
 echo "::set-output name=date::$(date +'%Y-%m-%d-%H%M')"

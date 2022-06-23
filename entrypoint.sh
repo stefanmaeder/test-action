@@ -4,9 +4,8 @@
 # time=$(date)
 # echo "::set-output name=time::$time"
 
-df -h
-cd /home/runner/work/_temp/_github_workflow
-ls -ahl
+ls -la $GITHUB_WORKSPACE
+
 npm install
 npm run build
 echo "::set-output name=date::$(date +'%Y-%m-%d-%H%M')"

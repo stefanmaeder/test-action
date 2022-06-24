@@ -17,4 +17,4 @@ git rm --cached rollup.config.js --ignore-unmatch
 git rm --cached .gitignore --ignore-unmatch
 git add .
 git commit -m "${GITHUB_REPOSITORY}-build${GITHUB_RUN_NUMBER}"
-git push --set-upstream origin production --force
+git push --set-upstream origin prod --force

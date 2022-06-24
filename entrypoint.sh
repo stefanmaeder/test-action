@@ -22,5 +22,5 @@ git rm --cached package.json --ignore-unmatch
 git rm --cached rollup.config.js --ignore-unmatch
 git rm --cached .gitignore --ignore-unmatch
 git add .
-git commit -m ${{ steps.date.outputs.date }}-${{ github.event.repository.name }}-build${{ github.run_number }}
+git commit -m "${GITHUB_REPOSITORY}-build${GITHUB_RUN_NUMBER}"
 git push --set-upstream origin production --force

@@ -1,17 +1,11 @@
 #!/bin/sh -l
 
-# echo "Hello $1"
-# time=$(date)
-# echo "::set-output name=time::$time"
-
-ls -la $GITHUB_WORKSPACE
-
 npm install
 npm run build
 echo "::set-output name=date::$(date +'%Y-%m-%d-%H%M')"
 git config user.name github-actions
 git config user.email github-actions@github.com
-git checkout -b "production"
+git checkout -b "prod"
 mv ./public/* ./
 #ls -al # list the files for confirmation.
 git rm -r --cached .github/workflows --ignore-unmatch

@@ -2,6 +2,8 @@
 
 DEPLOYMENT_BRANCH=prod
 
+echo $GITHUB_EVENT_NAME
+
 npm install
 npm run build
 mv ./public/* ./

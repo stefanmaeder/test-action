@@ -2,7 +2,7 @@
 
 DEPLOYMENT_BRANCH=prod
 
-echo $GITHUB_EVENT_NAME
+echo $GITHUB_EVENT_PATH
 
 npm install
 npm run build
